@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 20px;
+}
+.container {
+  background: linear-gradient(#3fba3f, #e0f6ff);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mario-gif {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+.clouds {
+  top: 0;
+  position: absolute;
+  width: 400px;
+  animation: clouds-animation 5s infinite linear;
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+.button-init {
+  border: solid 1px #3f87ba ;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #3f87ba50;
+  margin-top: 10px;
+  color: #000000;
+  text-decoration: none;
+
+}

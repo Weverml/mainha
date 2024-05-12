@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 50px;
+  font-style: italic;
+  font-weight: bold;
+  color: #3f87ba80;
+}
+.container {
+   background: linear-gradient(#3fba3f, #e0f6ff);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mario-gif {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+.vi{
+    width: 190px;
+    border: solid 5px #ECFFB050;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#video {
+    width: 300px;
+}
+.clouds {
+  top: 0;
+  position: absolute;
+  width: 400px;
+  animation: clouds-animation 5s infinite linear;
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -550px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
